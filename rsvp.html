@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Aiwanose's 22nd Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎉 Aiwanose's 22nd</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="details.html" class="nav-link">Details</a></li>
+                <li><a href="rsvp.html" class="nav-link active">RSVP</a></li>
+                <li><a href="gifts.html" class="nav-link">Gift Ideas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="rsvp-section">
+            <div class="rsvp-card">
+                <h2>RSVP</h2>
+                <p class="rsvp-deadline">by October 10th</p>
+                
+                <form class="rsvp-form" id="rsvpForm">
+                    <div class="form-group">
+                        <label for="name">Your name*</label>
+                        <input type="text" id="name" name="name" placeholder="Type here..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="attending">Are you coming?*</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="attending" value="yes" required>
+                                <span class="radio-custom"></span>
+                                Yes, can't wait!
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="attending" value="no" required>
+                                <span class="radio-custom"></span>
+                                Sadly, can't make it
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">How many people (including you)?*</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="song">What song will get you on the karaoke stage?</label>
+                        <input type="text" id="song" name="song" placeholder="Type here...">
+                    </div>
+
+                    <button type="submit" class="submit-btn">SEND RSVP ♥</button>
+                    <p class="form-footer">Your details won't be shared. Never submit passwords.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

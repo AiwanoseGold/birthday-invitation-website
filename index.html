@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiwanose's 22nd Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎉 Aiwanose's 22nd</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="details.html" class="nav-link">Details</a></li>
+                <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+                <li><a href="gifts.html" class="nav-link">Gift Ideas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Opening Envelope Section -->
+        <section class="envelope-section">
+            <div class="envelope-container">
+                <div class="envelope">
+                    <div class="envelope-front">
+                        <div class="leopard-pattern"></div>
+                        <div class="ribbon"></div>
+                        <button class="open-btn" onclick="openEnvelope()">Tap to Open</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Invitation -->
+        <section class="invitation" id="invitationContent" style="display: none;">
+            <div class="invitation-card">
+                <div class="card-content">
+                    <p class="subtitle">A little celebration is in order...</p>
+                    <h1 class="main-title">AIWANOSE<br>IS TURNING<br><span class="age">22</span></h1>
+                    <p class="invitation-text">AND YOU'RE<br>INVITED ♥</p>
+                    <div class="decorative-hearts">💗</div>
+                </div>
+                <div class="card-footer">
+                    <p>Let's celebrate!</p>
+                    <a href="details.html" class="cta-button">See Details →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
